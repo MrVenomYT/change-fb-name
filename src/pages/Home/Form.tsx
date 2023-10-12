@@ -21,6 +21,8 @@ export default defineComponent({
         const dialog = useAlertDialog();
         const v$ = useVuelidate({firstname: { required }}, { firstname });
 
+        console.log(fb.metaData.value)
+
         const fullname = computed<string>(() => {
             // return [firstname.value, midname.value, lastname.value]
             //     .filter(n => typeof n == "string" && n.trim() !== "")

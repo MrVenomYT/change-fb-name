@@ -18,7 +18,7 @@ export default defineComponent({
                                     <a href="https://www.facebook.com/lumine.id" target="_blank" class={styles.icon_link}>
                                         <FontAwesomeIcon icon={["fab", "facebook"]} size="3x" />
                                     </a>
-                                    <a href="https://wa.me/6281320842002" target="_blank" class={styles.icon_link}>
+                                    <a href="https://wa.me/6282219699230" target="_blank" class={styles.icon_link}>
                                         <FontAwesomeIcon icon={["fab", "whatsapp"]} size="3x" />
                                     </a>
                                     <a href="https://instagram.com/lumine809" target="_blank" class={styles.icon_link}>
