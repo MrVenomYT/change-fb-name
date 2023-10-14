@@ -14,7 +14,7 @@ export default defineComponent({
                 <Tips />
                 <Donate />
                 <div class={[styles.text_center, styles.mt_5]}>
-                    <p>Made with 💖 by <b>Lumine.</b></p>
+                    <p>Made with 💖 by <b>MrVenomYT.</b></p>
                 </div>
             </div>    
         )
