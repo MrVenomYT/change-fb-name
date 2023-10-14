@@ -30,7 +30,7 @@ export default defineComponent({
             //     .join(" ")
             //     .trim()
 
-            // menghapus .trim() dari kode sebelumnya supaya mendukung font blank
+            // removed .trim() from previous code to support blank fonts
             return [firstname.value, midname.value, lastname.value]
                 .filter(n => typeof n == "string" && n !== "")
                 .join(" ")
@@ -84,9 +84,9 @@ export default defineComponent({
                     }
                 }
 
-                const confirm = await dialog.confirm("Apakah kamu yakin ingin mengubah nama sekarang?", {
-                    confirmText: "Iya",
-                    cancelText: "Tidak"
+                const confirm = await dialog.confirm("Are you sure you want to change your name now?", {
+                    confirmText: "Yes",
+                    cancelText: "No"
                 });
 
                 if (!confirm.context.isConfirmed) {
@@ -165,25 +165,25 @@ export default defineComponent({
             <div class={[styles.card, styles.mb_4]}>
                 <div class={styles.card_body}>
                     <p class={[styles.text_center, styles.mb_3]}>
-                        Terlalu sering mengubah nama akan membuat facebook anda diblokir dari fitur ini untuk sementara
+                        Changing your name too often will result in your Facebook being temporarily blocked from this feature
                     </p>
                     <div class={styles.form_control}>
                         <label
                             class={styles.form_control_label}
                             for="first-name"
                         >
-                            Nama Depan
+                            First name
                         </label>
                         <input
                             class={[styles.form_control_input, {[styles.form_control_input_invalid]: v$.value.firstname.$error}]}
                             id="first-name"
-                            placeholder="Isi nama depan"
+                            placeholder="Fill in the first name"
                             v-model={firstname.value}
                             onInput={v$.value.firstname.$touch}
                         />
                         {v$.value.firstname.$error && (
                             <div class={styles.form_control_invalid_feedback}>
-                                Nama depan harus diisi
+                                First name is required
                             </div>
                         )}
                     </div>
@@ -192,31 +192,31 @@ export default defineComponent({
                             class={styles.form_control_label}
                             for="mid-name"
                         >
-                            Nama Tengah (Opsional)
+                            Middle Name (Optional)
                         </label>
                         <input
                             class={styles.form_control_input}
                             id="mid-name"
-                            placeholder="Isi nama tengah"
+                            placeholder="Fill in the middle name"
                             v-model={midname.value}
                         />
-                        <small>Boleh diabaikan</small>
+                        <small>Can be ignored</small>
                     </div>
                     <div class={styles.form_control}>
                         <label
                             class={styles.form_control_label}
                             for="last-name"
                         >
-                            Nama Belakang
+                            Last Name
                         </label>
                         <input
                             class={[styles.form_control_input]}
                             id="last-name"
-                            placeholder="Isi nama belakang"
+                            placeholder="Fill in the last name"
                             v-model={lastname.value}
                         />
                     </div>
-                    {/* anti limit hanya bekerja dengan fb yang mempunyai nama lebih dari satu kata */}
+                    {/* anti limit only works with fb whose name is more than one word */}
                     {hasWithoutLimitFitures.value && (
                         <div class={styles.form_control}>
                             <input
@@ -226,11 +226,11 @@ export default defineComponent({
                                 id="bypass-limit"
                             />
                             <label class={styles.form_control_label} for="bypass-limit">Anti Limit</label>
-                            <small class={[styles.d_block]}>Memungkinankan anda mengubah nama tanpa terkena limit 60 hari</small>
+                            <small class={[styles.d_block]}>Allows you to change your name without being subject to the 60 day limit</small>
                             <small class={[styles.text_danger, styles.d_block]}>
-                                Jika menyentang bagian ini mungkin disebagian nama yang sebenarnya valid akan diangkap tidak valid.
-                                Jika ada pesan kesalahan <strong>IG_NAME_VALIDATION_FAILED</strong> tapi kamu yakin nama yang kamu pakai valid coba jangan centang bagian ini.
-                                Dengan menyentang bagian ini nama di <strong>Tentang Profile</strong> tidak akan berubah.
+                                If you check this section, it is possible that some names that are actually valid will be considered invalid.
+                                 If there is an error message <strong>IG_NAME_VALIDATION_FAILED</strong> but if you are sure the name you are using is valid, try not to check this section.
+                                 By checking this section name in <strong>About Profiles</strong> will never change.
                             </small>
                             <small class={[styles.text_danger, styles.d_block]}>
                                 
