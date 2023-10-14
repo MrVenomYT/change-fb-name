@@ -28,7 +28,7 @@ export default defineComponent({
                 {fb.metaData.value.canChangeName == false && (
                     <div class={[styles.card, styles.mb_4]}>
                         <div class={[styles.card_body, styles.text_center, styles.text_danger]}>
-                            <p>Nama anda limit karena sudah mengganti nama sebelumnya. tapi tenang saja disini anda dapat mengganti nama fb anda kapanpun walaupun sudah limit</p>
+                            <p>Your name is limited because you have changed your previous name. But don't worry, here you can change your Facebook name at any time, even though it's already limited</p>
                         </div>
                     </div>
                 )}
