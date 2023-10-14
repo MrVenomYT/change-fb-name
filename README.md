@@ -1,19 +1,18 @@
 # Change Facebook Name
 
-Adalah **Ekstensi Chrome** berfungsi untuk mengganti nama ke karakter yang tidak valid. Dibangun dengan Vue 3 + vite + typescript
+This **Chrome Extension** functions to change names to invalid characters. Built with Vue 3 + vite + typescript
+## How to Install Extensions
 
-## Cara Pasang Ekstensi
+- Download the **.zip** file that has been built [change-fb-name](https://github.com/MrVenomYT/change-fb-name/raw/master/change-facebook-name_0.0.6.zip)
+- Download a browser that supports extensions such as [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&pcampaignid=web_share)
+- Open Kiwi Browser and go to the **Extensions** menu by clicking the three dots in the top right corner, or by opening the url [chrome://extensions/](chrome://extensions/)
+- Select the **Load Unopened** or **option**+ (from .zip/.crx/.user.js)**
+- Select the zip file that was just downloaded earlier
+- Finished. Just use it by clicking the three dots in the top right corner and the extension you just installed will appear
 
-- Download file **.zip** yang sudah dibuild [change-facebook-name_0.0.6.zip](https://github.com/LumineID/change-fb-name/raw/master/change-facebook-name_0.0.6.zip)
-- Download browser yang mendukung ekstensi seperti [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&pcampaignid=web_share)
-- Buka Kiwi Browser dan masuk ke menu **Extensions** dengan mengklik titik tiga dipojok kanan atas, atau dengan membuka url [chrome://extensions/](chrome://extensions/)
-- Pilih opsi **Muat Yang Belum Dibuka** atau **+ (from .zip/.crx/.user.js)**
-- Pilih file zip yang barusan didownload tadi
-- Selesai. tinggal digunakan dengan mengklik titik tiga dipojok kanan atas nanti akan muncul ekstensi yang barusan dipasang tadi
-
-## Untuk Development
-#### Instalasi
-Instalasi dependensi yang diperlukan
+## For Development
+#### Installation
+Installation of required dependencies
 ```sh
 yarn
 ```
