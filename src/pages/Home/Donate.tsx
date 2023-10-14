@@ -5,7 +5,7 @@ import styles from "@/css/modules/core.module.scss";
 export default defineComponent({
     setup() {
         function donate() {
-            chrome.tabs.create({url: "https://trakteer.id/lumine_id?open=true", active: true, index: 0});
+            chrome.tabs.create({url: "https://trakteer.id/Mr_VenomYT?open=true", active: true, index: 0});
         }
 
         return () => (
@@ -15,24 +15,24 @@ export default defineComponent({
                         <div class={[styles.col_8]}>
                             <div class={[styles.d_flex, styles.justify_center]}>
                                 <div class={styles.d_flex}>
-                                    <a href="https://www.facebook.com/lumine.id" target="_blank" class={styles.icon_link}>
-                                        <FontAwesomeIcon icon={["fab", "facebook"]} size="3x" />
+                                    <a href="https://discord.gg/XdaE8RZYng" target="_blank" class={styles.icon_link}>
+                                        <FontAwesomeIcon icon={["fab", "discord"]} size="3x" />
                                     </a>
-                                    <a href="https://wa.me/6282219699230" target="_blank" class={styles.icon_link}>
-                                        <FontAwesomeIcon icon={["fab", "whatsapp"]} size="3x" />
+                                    <a href="https://www.patreon.com/Iamhasil0786/" target="_blank" class={styles.icon_link}>
+                                        <FontAwesomeIcon icon={["fab", "patreon"]} size="3x" />
                                     </a>
-                                    <a href="https://instagram.com/lumine809" target="_blank" class={styles.icon_link}>
+                                    <a href="https://instagram.com/muhammad_hasil_13" target="_blank" class={styles.icon_link}>
                                         <FontAwesomeIcon icon={["fab", "instagram"]} size="3x" />
                                     </a>
                                 </div>
                             </div>
                             <div>
                                 <p>
-                                    Donasi untuk membatu saya membeli kopi agar saya semangat dalam berkarya. Terimakasih
+                                    Donate to help me buy coffee so I can be enthusiastic about creating. Thank You
                                 </p>
                             </div>
                             <button class={styles.button} onClick={donate}>
-                                Donasi Sekarang
+                                Donate Now
                             </button>
                         </div>
                         <div class={[styles.col_4, styles.d_flex, styles.align_items_center]}>
