@@ -14,10 +14,10 @@ export interface AlertOptions {
     title?: string,                  // @String dialog title
     confirmText?: string,            // @String button confirm text
     cancelText?: string,             // @String button cancel text
-    closeOutside?: boolean,          // @Boolean close dialog saat klik pada outside box
-    disableScrollOutside?: boolean,  // @Boolean matikan scroll outside
-    showTimer?: boolean,             // @Boolean kemajuan auto close timer
-    autoClose?: number,              // @Number auto close timer dalam ms (miliseconds)
+    closeOutside?: boolean,          // @Boolean close dialog when click on outside box
+    disableScrollOutside?: boolean,  // @Boolean scroll outside
+    showTimer?: boolean,             // @Boolean auto close timer
+    autoClose?: number,              // @Number auto close timer ms (miliseconds)
     buttons?: Array<Buttons>         // @Array dialog button [{text: String, handel: Function}]
 }
 
