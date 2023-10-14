@@ -15,12 +15,12 @@ export default defineComponent({
                             <h3 class={styles.text_center}>Tips</h3>
                         </div>
                         <div class={styles.card_body}>
-                            <p>Pastikan nama yang ingin anda ganti valid karena tidak semua karakter diterima oleh Facebook</p>
-                            <p>Cara mengetahuinya: </p>
+                            <p>Make sure the name you want to change is valid because not all characters are accepted by Facebook</p>
+                             <p>How to find out: </p>
                             <ul>
-                                <li>Pergi ke halaman ubah nama <a href={changeNameUrl} target="_blank">{changeNameUrl}</a></li>
-                                <li>Isikan <b>nama depan</b>, <b>nama tengah</b>, dan <b>nama belakang</b> dengan nama yang anda inginkan</li>
-                                <li>Lalu klik <b>Ubah</b>. jika tidak ada keterangan kesalahan atau berganti ke halaman <b>Pertinjau Nama</b> berarti karakter yang anda pakai valid. langung saja kembali jangan klik <b>Selesai</b></li>
+                               <li>Go to the change name page <a href={changeNameUrl} target="_blank">{changeNameUrl}</a></li>
+                                 <li>Fill in <b>first name</b>, <b>middle name</b>, and <b>last name</b> with the name you want</li>
+                                 <li>Then click <b>Change</b>. If there is no error information or changes to the <b>View Name</b> page, it means the character you are using is valid. just go straight back, don't click <b>Done</b></li>
                             </ul>
                         </div>
                     </div>
