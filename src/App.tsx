@@ -11,19 +11,19 @@ const Root = defineComponent({
         const dialog = useAlertDialog();
 
         await fb.loadCookies().then(() => {
-            // reload halaman ekstensi setiap kali akun fb berubah
+            // reload the extension page every time the fb account changes
             watch(fb.id, () => {
                 window.location.reload();
             });
 
-            // refresh cookie setiap cookie berubah
+            // refresh the cookie every time the cookie changes
             chrome.cookies.onChanged.addListener(useDebounceFn(() => {
                 fb.loadCookies();
             }, 500));
         });
 
         if (!fb.isLogin.value) {
-            dialog.alert("Anda belum login ke Facebook. silahkan login terlebih dahulu.").then(() => {
+            dialog.alert("You are not logged in to Facebook. please log in first.").then(() => {
                 chrome.tabs.getCurrent((tab) => {
                     chrome.tabs.create({url: "https://www.facebook.com/", active: true, index: 0}, () => {
                         chrome.tabs.remove(Number(tab?.id || 0));
